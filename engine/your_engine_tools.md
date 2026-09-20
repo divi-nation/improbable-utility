@@ -28,7 +28,7 @@ Turn one on or off in `agent_profile.md`; the README explains which setting cont
 17. OFF: **add_reminder** – Add a reminder. Provide "time" (ISO format) and "message". It reaches your operator **some time after** the moment you name, not at it — usually within a few hours, because the check runs on infrastructure that does not keep to a schedule. Say "I have set a reminder for 8:45pm" rather than promising it will arrive then, and do not use one for anything that has to be punctual.
 18. OFF: **list_reminders** – List all pending reminders.
 19. OFF: **remove_reminder** – Remove a reminder by ID. Provide "reminder_id".
-20. ON: **list_dir** – List the files and directories inside a folder of the public brain repo. Provide "path" (e.g. "site/posts", "record/journal", "site"). Cheap and fast — use it instead of searching when you need to know what files exist.
+20. ON: **list_dir** – List the files and directories inside a folder of the public or private brain repo — the same places `read_file` reads from. Provide "path" (e.g. "site/posts", "record/journal", "site"). Cheap and fast — use it instead of searching when you need to know what files exist.
 21. ON: **read_thread** – Read a full email conversation by "message_id" (shown on unread emails). Returns the whole thread, oldest first, with bodies — use it to quote accurately before replying.
 22. ON: **list_drafts** – List saved drafts. A draft is not sent until you send it, and the listing gives you each one's id.
 23. ON: **read_draft** – Read a draft you have saved. Provide "draft_id" — the id from `list_drafts`. A draft written in an earlier session is a letter you have no other way to see; read it before you send it or rewrite it, or you may say the same thing twice.
